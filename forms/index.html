@@ -1,0 +1,46 @@
+<html>  
+<head>  
+    <title>PHP login system</title>  
+
+    <link rel = "stylesheet" type = "text/css" href = "style.css">   
+</head>  
+<body>  
+    <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+        <h3>Sign in here</h3>
+        <form action="login.php" class="form_design" method="post">
+          Username:<input type="text" name="fname"></br>
+		  Password:<input type="password" name="pass"></br></br>
+		  <input type="submit" value="Log in">
+        </form> 
+        <a href="#">Forget Password<br> </a>
+        <div class="text-center">
+            <p style="color: #59238F;">Sign-Up</p>
+        </div>
+        
+    </div>
+  
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>
+
+</body>     
+</html>  
